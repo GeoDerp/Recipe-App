@@ -25,7 +25,8 @@
 		  "extensions": [
 			"dbaeumer.vscode-eslint",
 			"SonarSource.sonarlint-vscode",
-			"AquaSecurityOfficial.trivy-vulnerability-scanner"
+			"AquaSecurityOfficial.trivy-vulnerability-scanner",
+			"Angular.ng-template"
 		],
 		  "settings": {
 			"[typescript]": {
@@ -39,5 +40,4 @@
 		  }
 		}
 	  }
-	  
 }

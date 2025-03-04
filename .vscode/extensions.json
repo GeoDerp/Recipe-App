@@ -1,13 +1,4 @@
 {
-    "recommendations": [
-        // Docker 
-        "ms-vscode-remote.remote-containers",
-        "ms-azuretools.vscode-docker",
-        // Sonar 
-        "SonarSource.sonarlint-vscode",
-        // JS lint
-        "dbaeumer.vscode-eslint",
-        // Trivy
-        "AquaSecurityOfficial.trivy-vulnerability-scanner"
-    ]
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": ["angular.ng-template"]
 }
