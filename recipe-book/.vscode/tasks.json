@@ -3,7 +3,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Start",
       "type": "npm",
       "script": "start",
       "isBackground": true,
@@ -22,7 +21,6 @@
       }
     },
     {
-      "label": "Test",
       "type": "npm",
       "script": "test",
       "isBackground": true,
@@ -39,11 +37,6 @@
           }
         }
       }
-    },
-    {
-      "label": "Build",
-      "type": "npm",
-      "script": "build",
-    },
+    }
   ]
 }

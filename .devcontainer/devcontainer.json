@@ -2,9 +2,11 @@
 {
 	"name": "NodeJS",
 	"build": {
-		"dockerfile": "Dockerfile",
-		"context": "."
+		"dockerfile": "../Dockerfile",
+		"context": "../"
 	},
+	"workspaceMount": "source=${localWorkspaceFolder}/recipe-book,target=/workspace,type=bind",
+	"workspaceFolder": "/workspace",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {}
 
@@ -25,7 +27,8 @@
 		  "extensions": [
 			"dbaeumer.vscode-eslint",
 			"SonarSource.sonarlint-vscode",
-			"AquaSecurityOfficial.trivy-vulnerability-scanner"
+			"AquaSecurityOfficial.trivy-vulnerability-scanner",
+			"Angular.ng-template"
 		],
 		  "settings": {
 			"[typescript]": {
@@ -39,5 +42,4 @@
 		  }
 		}
 	  }
-	  
 }
