@@ -111,7 +111,7 @@ runs:
       with:
         image-ref: ${{ env.IMAGE_NAME_LOWER }}
         format: template
-        template: "@/github/workspace/.github/actions/node/trivy.tpl"
+        template: ".github/actions/node/trivy.tpl"
         output: trivy-high-critical.md
         ignore-unfixed: true
         vuln-type: 'os,library'
