@@ -3,8 +3,8 @@ name: Angular CI Workflow
 on: [push, pull_request]
 
 env:
-  SONAR_ORGANIZATION: ""
-  SONAR_PROJECT_KEY: ""
+  SONAR_ORGANIZATION: "geoderp"
+  SONAR_PROJECT_KEY: "GeoDerp_Recipe-App"
 
 jobs:
   build:
