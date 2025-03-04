@@ -24,6 +24,7 @@ runs:
     - name: lowercase repo
       run: |
         echo "IMAGE_NAME_LOWER=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
+      shell: bash
 
     - name: Get branch names.
       id: branch-names
