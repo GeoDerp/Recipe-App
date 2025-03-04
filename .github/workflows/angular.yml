@@ -28,3 +28,4 @@ jobs:
         sonar_args: >
           -Dsonar.organization=${{ env.SONAR_ORGANIZATION }}
           -Dsonar.projectKey=${{ env.SONAR_PROJECT_KEY }}
+        project_dir: "./recipe-book"

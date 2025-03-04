@@ -8,6 +8,10 @@ inputs:
   gitleaks_token:
     description: 'Organisational token for Gitleaks'
     required: false # only required for Organizations, not personal accounts
+  project_dir:
+    description: 'Directory of app in git repo'
+    required: false
+    default: .
   node_version:
     description: 'Node Version'
     required: false
@@ -63,15 +67,15 @@ runs:
         node-version: ${{ inputs.node_version }}
 
     - name: Install dependencies
-      run: npm ci
+      run:  npm ci --prefix ${{ inputs.project_dir }}
       shell: bash
 
     - name: Create test:ci
-      run: npm pkg set scripts.test:ci="ng test --no-watch --no-progress --browsers=ChromeHeadless"
+      run: npm pkg set scripts.test:ci="ng test --no-watch --no-progress --browsers=ChromeHeadless" --prefix ${{ inputs.project_dir }}
       shell: bash
 
     - name: Test Angular application (headless)
-      run: npm run test:ci
+      run: npm run test:ci --prefix ${{ inputs.project_dir }}
       shell: bash
 
     - name: Sonarcloud SAST
