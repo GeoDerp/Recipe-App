@@ -2,9 +2,11 @@
 {
 	"name": "NodeJS",
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "../Dockerfile",
 		"context": "../"
 	},
+	"workspaceMount": "source=${localWorkspaceFolder}/recipe-book,target=/workspace,type=bind",
+	"workspaceFolder": "/workspace",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {}
 

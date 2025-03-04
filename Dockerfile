@@ -11,5 +11,15 @@ RUN export NVM_DIR="$HOME/.nvm"; \
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" && \
 nvm install 23
 
-# install dependencies 
-RUN npm install . --save-dev
+EXPOSE 4200/tcp
+
+# Pull project 
+COPY ./recipe-book /app/recipe-book
+WORKDIR /app/recipe-book/
+
+# # Install dependencies 
+RUN source ~/.bashrc && npm install . --save-dev
+
+# # Run server 
+ENTRYPOINT ["npm", "start"]
+
