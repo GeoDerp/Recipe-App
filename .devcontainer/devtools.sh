@@ -4,6 +4,9 @@ set -e
 # give default user permission to /usr/local 
 chmod -R +777 /usr/local/
 
+# Install angular 
+npm install -g @angular/cli
+
 # Install Trivy repo
 <<EOF cat >> /etc/yum.repos.d/trivy.repo
 [trivy]

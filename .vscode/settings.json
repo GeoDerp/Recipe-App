@@ -10,5 +10,9 @@
         }
     ],
     "workbench.tree.indent": 14,
-    "trivy.offlineScan": true
+    "trivy.offlineScan": true,
+    "sonarlint.connectedMode.project": {
+        "connectionId": "geoderp",
+        "projectKey": "GeoDerp_Recipe-App"
+    }
 }
