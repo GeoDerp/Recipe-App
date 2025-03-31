@@ -1,45 +1,43 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 {
-	"name": "NodeJS",
+	"name": "nodejs-devcontainer",
 	"build": {
 		"dockerfile": "../Dockerfile",
-		"context": "../"
+		"context": "../",
+		"target": "dev"
 	},
-	"workspaceMount": "source=${localWorkspaceFolder}/recipe-book,target=/workspace,type=bind",
-	"workspaceFolder": "/workspace",
 	"features": {
 		"ghcr.io/devcontainers/features/common-utils:2": {}
-
 	},
+	// uncomment if the app/source directory is in a sub folder
+	// "workspaceMount": "source=${localWorkspaceFolder}/myApp,target=/workspace,type=bind",
+	// "workspaceFolder": "/workspace",
 
 	// may be needed for Podman
 	"runArgs": [
 		"--userns=keep-id",
 		"--pid=host"
 	],
-	"remoteUser": "root",
-	"containerUser": "root",
-
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
 		  // Add the IDs of extensions you want installed when the container is created.
 		  "extensions": [
 			"dbaeumer.vscode-eslint",
+			"ms-vscode.vscode-typescript-next",
 			"SonarSource.sonarlint-vscode",
 			"AquaSecurityOfficial.trivy-vulnerability-scanner",
+			"firefox-devtools.vscode-firefox-debug",
 			"Angular.ng-template"
 		],
 		  "settings": {
 			"[typescript]": {
-			  "editor.formatOnSave": true,
-			  "editor.codeActionsOnSave": {
-				"source.fixAll": "explicit",
-				"source.organizeImports": "explicit"
-			  },
-			  "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-			}
+			  "editor.defaultFormatter": "ms-vscode.vscode-typescript-next",
+			},
+			 "editor.tabSize": 4
 		  }
 		}
 	  }
-}
+	}
+
+
