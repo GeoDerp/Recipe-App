@@ -1,0 +1,433 @@
+[
+  {
+    "id": 1,
+    "title": "Classic Tomato Bruschetta",
+    "ingredients": [
+      { "item": "Baguette slices", "quantity": "1", "unit": "loaf" },
+      { "item": "Ripe tomatoes", "quantity": "3", "unit": "medium" },
+      {
+        "item": "Fresh basil leaves",
+        "quantity": "1/4",
+        "unit": "cup",
+        "preparation": "chopped"
+      },
+      {
+        "item": "Garlic clove",
+        "quantity": "1",
+        "unit": "clove",
+        "preparation": "minced"
+      },
+      {
+        "item": "Extra virgin olive oil",
+        "quantity": "2",
+        "unit": "tablespoons"
+      },
+      {
+        "item": "Balsamic glaze",
+        "quantity": "1",
+        "unit": "teaspoon",
+        "optional": true
+      },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. Preheat oven to 180°C (350°F). Brush baguette slices with olive oil and bake for 8-10 minutes until lightly golden. 2. In a bowl, combine diced tomatoes, basil, minced garlic, olive oil, salt, and pepper. 3. Spoon the tomato mixture onto the toasted baguette slices. 4. Drizzle with balsamic glaze if desired. Serve immediately."
+  },
+  {
+    "id": 2,
+    "title": "Quick Lemon Herb Chicken",
+    "ingredients": [
+      { "item": "Chicken breasts", "quantity": "2", "unit": "halves" },
+      {
+        "item": "Lemon",
+        "quantity": "1",
+        "unit": "medium",
+        "preparation": "juiced and zested"
+      },
+      {
+        "item": "Fresh rosemary",
+        "quantity": "1",
+        "unit": "tablespoon",
+        "preparation": "chopped"
+      },
+      {
+        "item": "Fresh thyme",
+        "quantity": "1",
+        "unit": "teaspoon",
+        "preparation": "chopped"
+      },
+      { "item": "Olive oil", "quantity": "1", "unit": "tablespoon" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. In a bowl, whisk together lemon juice, lemon zest, rosemary, thyme, olive oil, salt, and pepper. 2. Place chicken breasts in a shallow dish and pour the marinade over them, ensuring they are fully coated. Marinate for at least 15 minutes, or up to 4 hours in the refrigerator. 3. Preheat a grill or skillet over medium-high heat. 4. Cook chicken for 6-8 minutes per side, or until cooked through and juices run clear. Serve hot."
+  },
+  {
+    "id": 3,
+    "title": "Creamy Avocado Pasta",
+    "ingredients": [
+      { "item": "Pasta", "quantity": "200", "unit": "grams" },
+      { "item": "Ripe avocados", "quantity": "2", "unit": "medium" },
+      {
+        "item": "Garlic clove",
+        "quantity": "1",
+        "unit": "clove",
+        "preparation": "minced"
+      },
+      { "item": "Lemon juice", "quantity": "1", "unit": "tablespoon" },
+      { "item": "Fresh basil leaves", "quantity": "1/4", "unit": "cup" },
+      { "item": "Olive oil", "quantity": "2", "unit": "tablespoons" },
+      {
+        "item": "Parmesan cheese",
+        "quantity": "2",
+        "unit": "tablespoons",
+        "preparation": "grated",
+        "optional": true
+      },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. Cook pasta according to package directions. Reserve about 1/2 cup of pasta water before draining. 2. While the pasta cooks, combine avocados, minced garlic, lemon juice, basil, olive oil, salt, and pepper in a food processor or blender. Blend until smooth and creamy, adding a little pasta water if needed to reach desired consistency. 3. Return the drained pasta to the pot. Pour the avocado sauce over the pasta and toss to coat. Add a little more pasta water if the sauce is too thick. 4. Stir in grated Parmesan cheese if using. Serve immediately."
+  },
+  {
+    "id": 4,
+    "title": "Simple Scrambled Eggs",
+    "ingredients": [
+      { "item": "Eggs", "quantity": "3", "unit": "" },
+      { "item": "Milk or cream", "quantity": "1", "unit": "tablespoon" },
+      { "item": "Butter", "quantity": "1", "unit": "teaspoon" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. In a bowl, whisk together eggs, milk or cream, salt, and pepper until well combined. 2. Melt butter in a non-stick skillet over medium heat. 3. Pour the egg mixture into the skillet. As the edges begin to set, gently push the cooked egg towards the center, tilting the pan to allow uncooked egg to flow underneath. 4. Continue cooking until the eggs are set but still slightly moist. Serve immediately."
+  },
+  {
+    "id": 5,
+    "title": "Peanut Butter Banana Smoothie",
+    "ingredients": [
+      {
+        "item": "Banana",
+        "quantity": "1",
+        "unit": "medium",
+        "preparation": "frozen"
+      },
+      { "item": "Peanut butter", "quantity": "2", "unit": "tablespoons" },
+      { "item": "Milk (dairy or non-dairy)", "quantity": "1", "unit": "cup" },
+      {
+        "item": "Honey or maple syrup",
+        "quantity": "1",
+        "unit": "teaspoon",
+        "optional": true
+      },
+      {
+        "item": "Chia seeds",
+        "quantity": "1",
+        "unit": "teaspoon",
+        "optional": true
+      }
+    ],
+    "method": "1. Combine all ingredients in a blender. 2. Blend until smooth and creamy. Add more liquid if needed to reach desired consistency. 3. Pour into a glass and enjoy immediately."
+  },
+  {
+    "id": 6,
+    "title": "Garlic Parmesan Roasted Broccoli",
+    "ingredients": [
+      { "item": "Broccoli florets", "quantity": "500", "unit": "grams" },
+      { "item": "Olive oil", "quantity": "2", "unit": "tablespoons" },
+      { "item": "Garlic powder", "quantity": "1", "unit": "teaspoon" },
+      {
+        "item": "Grated Parmesan cheese",
+        "quantity": "2",
+        "unit": "tablespoons"
+      },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. Preheat oven to 200°C (400°F). 2. In a large bowl, toss broccoli florets with olive oil, garlic powder, salt, and pepper. 3. Spread the broccoli in a single layer on a baking sheet. 4. Roast for 15-20 minutes, or until tender-crisp and lightly browned. 5. Sprinkle with grated Parmesan cheese during the last 5 minutes of cooking. Serve immediately."
+  },
+  {
+    "id": 7,
+    "title": "Caprese Salad",
+    "ingredients": [
+      {
+        "item": "Fresh mozzarella cheese",
+        "quantity": "200",
+        "unit": "grams",
+        "preparation": "sliced"
+      },
+      {
+        "item": "Ripe tomatoes",
+        "quantity": "2",
+        "unit": "large",
+        "preparation": "sliced"
+      },
+      { "item": "Fresh basil leaves", "quantity": "1/4", "unit": "cup" },
+      {
+        "item": "Extra virgin olive oil",
+        "quantity": "2",
+        "unit": "tablespoons"
+      },
+      {
+        "item": "Balsamic glaze",
+        "quantity": "1",
+        "unit": "tablespoon",
+        "optional": true
+      },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. Arrange alternating slices of mozzarella and tomato on a platter. 2. Tuck fresh basil leaves between the slices. 3. Drizzle with olive oil and balsamic glaze if desired. 4. Season with salt and pepper. Serve immediately."
+  },
+  {
+    "id": 8,
+    "title": "One-Pan Lemon Herb Salmon with Asparagus",
+    "ingredients": [
+      { "item": "Salmon fillets", "quantity": "2", "unit": "" },
+      {
+        "item": "Asparagus spears",
+        "quantity": "300",
+        "unit": "grams",
+        "preparation": "trimmed"
+      },
+      {
+        "item": "Lemon",
+        "quantity": "1",
+        "unit": "medium",
+        "preparation": "sliced"
+      },
+      {
+        "item": "Fresh dill",
+        "quantity": "2",
+        "unit": "tablespoons",
+        "preparation": "chopped"
+      },
+      { "item": "Olive oil", "quantity": "2", "unit": "tablespoons" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. Preheat oven to 200°C (400°F). Line a baking sheet with parchment paper. 2. Place salmon fillets and asparagus spears on the baking sheet. 3. Drizzle with olive oil and season with salt and pepper. 4. Top salmon with lemon slices and sprinkle with fresh dill. 5. Bake for 12-15 minutes, or until salmon is cooked through and asparagus is tender-crisp. Serve immediately."
+  },
+  {
+    "id": 9,
+    "title": "Black Bean Salsa",
+    "ingredients": [
+      {
+        "item": "Canned black beans",
+        "quantity": "1",
+        "unit": "can",
+        "preparation": "rinsed and drained"
+      },
+      {
+        "item": "Corn kernels",
+        "quantity": "1",
+        "unit": "cup",
+        "preparation": "fresh or frozen"
+      },
+      {
+        "item": "Red onion",
+        "quantity": "1/4",
+        "unit": "cup",
+        "preparation": "finely diced"
+      },
+      {
+        "item": "Red bell pepper",
+        "quantity": "1/2",
+        "unit": "medium",
+        "preparation": "diced"
+      },
+      {
+        "item": "Jalapeño",
+        "quantity": "1",
+        "unit": "small",
+        "preparation": "minced",
+        "optional": true
+      },
+      {
+        "item": "Fresh cilantro",
+        "quantity": "2",
+        "unit": "tablespoons",
+        "preparation": "chopped"
+      },
+      { "item": "Lime juice", "quantity": "2", "unit": "tablespoons" },
+      { "item": "Olive oil", "quantity": "1", "unit": "tablespoon" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. In a medium bowl, combine black beans, corn, red onion, red bell pepper, jalapeño (if using), and cilantro. 2. In a small bowl, whisk together lime juice, olive oil, salt, and pepper. 3. Pour the dressing over the bean and vegetable mixture. Toss to combine. 4. Chill for at least 15 minutes before serving. Serve with tortilla chips or as a topping for grilled chicken or fish."
+  },
+  {
+    "id": 10,
+    "title": "Overnight Oats",
+    "ingredients": [
+      { "item": "Rolled oats", "quantity": "1/2", "unit": "cup" },
+      { "item": "Milk (dairy or non-dairy)", "quantity": "1", "unit": "cup" },
+      {
+        "item": "Chia seeds",
+        "quantity": "1",
+        "unit": "tablespoon",
+        "optional": true
+      },
+      {
+        "item": "Maple syrup or honey",
+        "quantity": "1",
+        "unit": "tablespoon",
+        "optional": true
+      },
+      {
+        "item": "Vanilla extract",
+        "quantity": "1/2",
+        "unit": "teaspoon",
+        "optional": true
+      },
+      {
+        "item": "Toppings (berries, nuts, seeds)",
+        "quantity": "to taste",
+        "unit": "optional"
+      }
+    ],
+    "method": "1. In a jar or container, combine rolled oats, milk, chia seeds (if using), maple syrup or honey (if using), and vanilla extract (if using). 2. Stir well to combine. 3. Cover and refrigerate overnight or for at least 4 hours. 4. In the morning, add your favorite toppings and enjoy."
+  },
+  {
+    "id": 11,
+    "title": "Simple Tomato Soup",
+    "ingredients": [
+      {
+        "item": "Canned diced tomatoes",
+        "quantity": "2",
+        "unit": "14.5 ounce cans",
+        "preparation": "undrained"
+      },
+      { "item": "Vegetable broth", "quantity": "2", "unit": "cups" },
+      {
+        "item": "Onion",
+        "quantity": "1/2",
+        "unit": "medium",
+        "preparation": "chopped"
+      },
+      {
+        "item": "Garlic clove",
+        "quantity": "1",
+        "unit": "clove",
+        "preparation": "minced"
+      },
+      { "item": "Dried oregano", "quantity": "1/2", "unit": "teaspoon" },
+      { "item": "Olive oil", "quantity": "1", "unit": "tablespoon" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" },
+      {
+        "item": "Fresh basil leaves",
+        "quantity": "for garnish",
+        "unit": "optional"
+      }
+    ],
+    "method": "1. Heat olive oil in a pot over medium heat. Add chopped onion and cook until softened, about 5 minutes. Add minced garlic and cook for another minute until fragrant. 2. Stir in diced tomatoes (undrained), vegetable broth, and dried oregano. Bring to a simmer. 3. Reduce heat and cook for 15-20 minutes, allowing the flavors to meld. 4. Use an immersion blender or carefully transfer the soup to a regular blender and blend until smooth. 5. Season with salt and pepper to taste. 6. Ladle into bowls and garnish with fresh basil leaves, if desired. Serve hot."
+  },
+  {
+    "id": 12,
+    "title": "Quesadillas",
+    "ingredients": [
+      { "item": "Flour tortillas", "quantity": "4", "unit": "" },
+      {
+        "item": "Shredded cheese (cheddar, Monterey Jack, or a blend)",
+        "quantity": "1",
+        "unit": "cup"
+      },
+      {
+        "item": "Cooked chicken or black beans",
+        "quantity": "1/2",
+        "unit": "cup",
+        "optional": true
+      },
+      { "item": "Salsa", "quantity": "for serving", "unit": "optional" },
+      { "item": "Sour cream", "quantity": "for serving", "unit": "optional" }
+    ],
+    "method": "1. Heat a dry skillet or griddle over medium heat. 2. Place one tortilla in the skillet. Sprinkle half of the cheese over half of the tortilla. If using, add cooked chicken or black beans over the cheese. Sprinkle the remaining cheese on top. 3. Place the second tortilla on top. 4. Cook for 2-3 minutes per side, or until the tortilla is golden brown and the cheese is melted and gooey. 5. Carefully remove from the skillet and cut into wedges. 6. Serve immediately with salsa and sour cream, if desired. Repeat with the remaining tortillas and fillings."
+  },
+  {
+    "id": 13,
+    "title": "Tuna Salad Sandwich",
+    "ingredients": [
+      {
+        "item": "Canned tuna in water",
+        "quantity": "1",
+        "unit": "5 ounce can",
+        "preparation": "drained"
+      },
+      { "item": "Mayonnaise", "quantity": "2", "unit": "tablespoons" },
+      {
+        "item": "Celery",
+        "quantity": "1/4",
+        "unit": "cup",
+        "preparation": "finely chopped"
+      },
+      {
+        "item": "Red onion",
+        "quantity": "1",
+        "unit": "tablespoon",
+        "preparation": "finely chopped"
+      },
+      { "item": "Lemon juice", "quantity": "1", "unit": "teaspoon" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" },
+      { "item": "Bread slices", "quantity": "2", "unit": "" },
+      { "item": "Lettuce leaves", "quantity": "optional" }
+    ],
+    "method": "1. In a medium bowl, combine drained tuna, mayonnaise, chopped celery, and chopped red onion. 2. Stir in lemon juice, salt, and pepper. Mix well. 3. Spread the tuna salad evenly on one slice of bread. 4. Top with lettuce leaves, if desired, and the other slice of bread. Serve immediately."
+  },
+  {
+    "id": 14,
+    "title": "Baked Sweet Potato Fries",
+    "ingredients": [
+      {
+        "item": "Sweet potatoes",
+        "quantity": "2",
+        "unit": "medium",
+        "preparation": "peeled and cut into fries"
+      },
+      { "item": "Olive oil", "quantity": "1", "unit": "tablespoon" },
+      { "item": "Paprika", "quantity": "1/2", "unit": "teaspoon" },
+      { "item": "Garlic powder", "quantity": "1/4", "unit": "teaspoon" },
+      { "item": "Salt", "quantity": "to taste" },
+      { "item": "Black pepper", "quantity": "to taste" }
+    ],
+    "method": "1. Preheat oven to 200°C (400°F). Line a baking sheet with parchment paper. 2. In a large bowl, toss sweet potato fries with olive oil, paprika, garlic powder, salt, and pepper until evenly coated. 3. Spread the fries in a single layer on the prepared baking sheet. 4. Bake for 20-25 minutes, flipping halfway through, until tender and lightly browned. Serve hot."
+  },
+  {
+    "id": 15,
+    "title": "Fruit Salad",
+    "ingredients": [
+      {
+        "item": "Strawberries",
+        "quantity": "1",
+        "unit": "cup",
+        "preparation": "sliced"
+      },
+      { "item": "Blueberries", "quantity": "1/2", "unit": "cup" },
+      {
+        "item": "Pineapple",
+        "quantity": "1",
+        "unit": "cup",
+        "preparation": "cubed"
+      },
+      {
+        "item": "Kiwi",
+        "quantity": "2",
+        "unit": "medium",
+        "preparation": "peeled and sliced"
+      },
+      {
+        "item": "Orange",
+        "quantity": "1",
+        "unit": "medium",
+        "preparation": "segmented"
+      },
+      {
+        "item": "Honey or lime juice",
+        "quantity": "1",
+        "unit": "tablespoon",
+        "optional": true
+      }
+    ],
+    "method": "1. In a large bowl, gently combine all the prepared fruits. 2. If desired, drizzle with honey or lime juice for added sweetness or tang. 3. Toss lightly to combine. 4. Serve immediately or chill for later."
+  }
+]

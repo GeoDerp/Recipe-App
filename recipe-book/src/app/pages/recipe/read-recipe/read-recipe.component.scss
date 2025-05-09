@@ -1,0 +1,14 @@
+main {
+  display: grid;
+  justify-content: center;
+}
+
+.container {
+  max-width: 50%;
+  justify-content: center;
+  margin: auto;
+}
+
+mat-card {
+  margin-top: 20px;
+}

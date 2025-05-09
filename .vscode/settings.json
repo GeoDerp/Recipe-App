@@ -14,5 +14,11 @@
     "sonarlint.connectedMode.project": {
         "connectionId": "geoderp",
         "projectKey": "GeoDerp_Recipe-App"
-    }
+    },
+    "containers.commands.composeUp": [
+        {
+            "label": "Compose Up",
+            "template": "${composeCommand} ${configurationFile} up ${detached} ${build}"
+        }
+    ]
 }

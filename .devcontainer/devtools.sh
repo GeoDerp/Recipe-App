@@ -2,7 +2,7 @@
 set -e
 
 # give default user permission to /usr/local 
-chmod -R +777 /usr/local/
+chmod -R +007 /usr/local/
 
 # Install angular 
 npm install -g @angular/cli

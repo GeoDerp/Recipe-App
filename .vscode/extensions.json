@@ -1,7 +1,7 @@
 {
     "recommendations": [
         // Docker 
-        "ms-vscode-remote.remote-containers",
+        "ms-azuretools.vscode-containers",
         "ms-azuretools.vscode-docker",
         //firefox
         "firefox-devtools.vscode-firefox-debug",

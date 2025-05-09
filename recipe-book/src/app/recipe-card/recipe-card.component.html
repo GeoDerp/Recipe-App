@@ -1,0 +1,17 @@
+<mat-card class="example-card" appearance="outlined">
+  <div style="display: flex;">
+  <mat-card-header>
+    <mat-card-title>{{ recipe().title }}</mat-card-title>
+  </mat-card-header>
+  @if (recipe().imagestr) {
+    <img style="margin-left: auto; order: 2;" mat-card-md-image src="{{ recipe().imagestr }}" alt="ohno">
+    }
+  </div>
+  <mat-card-content>
+  </mat-card-content>
+  <mat-card-actions>
+    <button value="{{ recipe().favourite }}" mat-fab extended>
+      <mat-icon>favorite</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>

@@ -1,1 +1,7 @@
-<p>home works!</p>
+<main>
+  @for (recipe of this.recipies(); track recipe.id) {
+  <a href="/recipe/{{ recipe.id }}"
+    ><app-recipe-card [recipe]="recipe"></app-recipe-card
+  ></a>
+  }
+</main>
