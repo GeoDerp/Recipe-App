@@ -47,7 +47,7 @@
 			],
 			"settings": {
 				"[typescript]": {
-					"editor.defaultFormatter": "ms-vscode.vscode-typescript-next",
+					"editor.defaultFormatter": "denoland.vscode-deno",
 				},
 				"editor.tabSize": 4
 			}
