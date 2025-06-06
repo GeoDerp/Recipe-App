@@ -1,16 +1,26 @@
-<mat-card class="example-card" appearance="outlined">
-  <div style="display: flex;">
-  <mat-card-header>
-    <mat-card-title>{{ recipe().title }}</mat-card-title>
-  </mat-card-header>
-  @if (recipe().imagestr) {
-    <img style="margin-left: auto; order: 2;" mat-card-md-image src="{{ recipe().imagestr }}" alt="ohno">
+<mat-card class="card" appearance="outlined">
+  <div (click)="recipePage()" style="display: flex; cursor: pointer">
+    <mat-card-header>
+      <mat-card-title>{{ recipe().title }}</mat-card-title>
+    </mat-card-header>
+    @if (recipe().imagestr) {
+    <img
+      style="margin-left: auto; order: 2"
+      mat-card-md-image
+      src="{{ recipe().imagestr }}"
+      alt="{{ recipe().title }}"
+    />
     }
   </div>
-  <mat-card-content>
-  </mat-card-content>
+  <mat-card-content> </mat-card-content>
+
   <mat-card-actions>
-    <button value="{{ recipe().favourite }}" mat-fab extended>
+    <button
+      [class.favorited]="recipe().favorite"
+      (click)="favoriteButton()"
+      value="{{ recipe().favorite }}"
+      mat-fab
+    >
       <mat-icon>favorite</mat-icon>
     </button>
   </mat-card-actions>

@@ -1,7 +1,16 @@
 <main>
-  @for (recipe of this.recipies(); track recipe.id) {
-  <a href="/recipe/{{ recipe.id }}"
-    ><app-recipe-card [recipe]="recipe"></app-recipe-card
-  ></a>
+  @for (recipe of this.recipes(); track recipe.id) {
+  <app-recipe-card
+    (favorite)="favorite(recipe.id)"
+    [recipe]="recipe"
+  ></app-recipe-card>
   }
+  <div class="bottomBar">
+    <button (click)="editDialog()" class="edit" mat-fab>
+      <mat-icon>edit</mat-icon>
+    </button>
+    <button (click)="generaterecipes()" class="edit" mat-fab>
+      <mat-icon>refresh</mat-icon>
+    </button>
+  </div>
 </main>

@@ -10,18 +10,21 @@ COPY .nvmrc .nvmrc
 
 # Check for package update
 RUN dnf -y update-minimal --security --sec-severity=Important --sec-severity=Critical && \
-# enable nodejs verson
-dnf module -y enable nodejs:$(cat .nvmrc | cut -c2-3) && \
-# Install git, nano, nodejs and npm 
-dnf install git nano nodejs npm -y; \
-# clear cache
-dnf clean all
+    # enable nodejs verson
+    dnf module -y enable nodejs:$(cat .nvmrc | cut -c2-3) && \
+    # Install git, nano, nodejs and npm 
+    dnf install git nano nodejs npm -y; \
+    # clear cache
+    dnf clean all
 
 # Dev target
 FROM base AS dev
 COPY .devcontainer/devtools.sh /tmp/devtools.sh
 RUN  /tmp/devtools.sh
 USER default
+
+# install dino
+#RUN curl -fsSL https://deno.land/install.sh | sh
 
 # DEPLOYMENT EXAMPLE:
 #-----------------------------
@@ -36,7 +39,7 @@ COPY . .
 
 ## Install project requirements, build project
 RUN npm install lite-server --save-dev; \
-npm build --prod
+    npm build --prod
 
 ## clarify permissions
 RUN chown -R default:0 /app && \

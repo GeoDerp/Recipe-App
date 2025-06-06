@@ -8,6 +8,19 @@ main {
 }
 
 a {
-  color:  var(--mat-sys-primary-container);;
+  color: var(--mat-sys-primary-container);
   text-decoration: none;
+}
+
+.bottomBar {
+  position: fixed;
+  display: flex;
+  bottom: 15px;
+  left: 60%;
+}
+
+.edit {
+  margin: 20px 0px;
+  margin-left: auto;
+  margin-right: 10px;
 }

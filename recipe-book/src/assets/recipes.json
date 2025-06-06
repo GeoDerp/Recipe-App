@@ -31,7 +31,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. Preheat oven to 180°C (350°F). Brush baguette slices with olive oil and bake for 8-10 minutes until lightly golden. 2. In a bowl, combine diced tomatoes, basil, minced garlic, olive oil, salt, and pepper. 3. Spoon the tomato mixture onto the toasted baguette slices. 4. Drizzle with balsamic glaze if desired. Serve immediately."
+    "method": [
+      "1. Preheat oven to 180°C (350°F). Brush baguette slices with olive oil and bake for 8-10 minutes until lightly golden.",
+      "2. In a bowl, combine diced tomatoes, basil, minced garlic, olive oil, salt, and pepper.",
+      "3. Spoon the tomato mixture onto the toasted baguette slices.",
+      "4. Drizzle with balsamic glaze if desired. Serve immediately."
+    ]
   },
   {
     "id": 2,
@@ -60,7 +65,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. In a bowl, whisk together lemon juice, lemon zest, rosemary, thyme, olive oil, salt, and pepper. 2. Place chicken breasts in a shallow dish and pour the marinade over them, ensuring they are fully coated. Marinate for at least 15 minutes, or up to 4 hours in the refrigerator. 3. Preheat a grill or skillet over medium-high heat. 4. Cook chicken for 6-8 minutes per side, or until cooked through and juices run clear. Serve hot."
+    "method": [
+      "1. In a bowl, whisk together lemon juice, lemon zest, rosemary, thyme, olive oil, salt, and pepper.",
+      "2. Place chicken breasts in a shallow dish and pour the marinade over them, ensuring they are fully coated. Marinate for at least 15 minutes, or up to 4 hours in the refrigerator.",
+      "3. Preheat a grill or skillet over medium-high heat.",
+      "4. Cook chicken for 6-8 minutes per side, or until cooked through and juices run clear. Serve hot."
+    ]
   },
   {
     "id": 3,
@@ -87,7 +97,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. Cook pasta according to package directions. Reserve about 1/2 cup of pasta water before draining. 2. While the pasta cooks, combine avocados, minced garlic, lemon juice, basil, olive oil, salt, and pepper in a food processor or blender. Blend until smooth and creamy, adding a little pasta water if needed to reach desired consistency. 3. Return the drained pasta to the pot. Pour the avocado sauce over the pasta and toss to coat. Add a little more pasta water if the sauce is too thick. 4. Stir in grated Parmesan cheese if using. Serve immediately."
+    "method": [
+      "1. Cook pasta according to package directions. Reserve about 1/2 cup of pasta water before draining.",
+      "2. While the pasta cooks, combine avocados, minced garlic, lemon juice, basil, olive oil, salt, and pepper in a food processor or blender. Blend until smooth and creamy, adding a little pasta water if needed to reach desired consistency.",
+      "3. Return the drained pasta to the pot. Pour the avocado sauce over the pasta and toss to coat. Add a little more pasta water if the sauce is too thick.",
+      "4. Stir in grated Parmesan cheese if using. Serve immediately."
+    ]
   },
   {
     "id": 4,
@@ -99,7 +114,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. In a bowl, whisk together eggs, milk or cream, salt, and pepper until well combined. 2. Melt butter in a non-stick skillet over medium heat. 3. Pour the egg mixture into the skillet. As the edges begin to set, gently push the cooked egg towards the center, tilting the pan to allow uncooked egg to flow underneath. 4. Continue cooking until the eggs are set but still slightly moist. Serve immediately."
+    "method": [
+      "1. In a bowl, whisk together eggs, milk or cream, salt, and pepper until well combined.",
+      "2. Melt butter in a non-stick skillet over medium heat.",
+      "3. Pour the egg mixture into the skillet. As the edges begin to set, gently push the cooked egg towards the center, tilting the pan to allow uncooked egg to flow underneath.",
+      "4. Continue cooking until the eggs are set but still slightly moist. Serve immediately."
+    ]
   },
   {
     "id": 5,
@@ -126,7 +146,11 @@
         "optional": true
       }
     ],
-    "method": "1. Combine all ingredients in a blender. 2. Blend until smooth and creamy. Add more liquid if needed to reach desired consistency. 3. Pour into a glass and enjoy immediately."
+    "method": [
+      "1. Combine all ingredients in a blender.",
+      "2. Blend until smooth and creamy. Add more liquid if needed to reach desired consistency.",
+      "3. Pour into a glass and enjoy immediately."
+    ]
   },
   {
     "id": 6,
@@ -143,7 +167,13 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. Preheat oven to 200°C (400°F). 2. In a large bowl, toss broccoli florets with olive oil, garlic powder, salt, and pepper. 3. Spread the broccoli in a single layer on a baking sheet. 4. Roast for 15-20 minutes, or until tender-crisp and lightly browned. 5. Sprinkle with grated Parmesan cheese during the last 5 minutes of cooking. Serve immediately."
+    "method": [
+      "1. Preheat oven to 200°C (400°F).",
+      "2. In a large bowl, toss broccoli florets with olive oil, garlic powder, salt, and pepper.",
+      "3. Spread the broccoli in a single layer on a baking sheet.",
+      "4. Roast for 15-20 minutes, or until tender-crisp and lightly browned.",
+      "5. Sprinkle with grated Parmesan cheese during the last 5 minutes of cooking. Serve immediately."
+    ]
   },
   {
     "id": 7,
@@ -176,7 +206,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. Arrange alternating slices of mozzarella and tomato on a platter. 2. Tuck fresh basil leaves between the slices. 3. Drizzle with olive oil and balsamic glaze if desired. 4. Season with salt and pepper. Serve immediately."
+    "method": [
+      "1. Arrange alternating slices of mozzarella and tomato on a platter.",
+      "2. Tuck fresh basil leaves between the slices.",
+      "3. Drizzle with olive oil and balsamic glaze if desired.",
+      "4. Season with salt and pepper. Serve immediately."
+    ]
   },
   {
     "id": 8,
@@ -205,7 +240,13 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. Preheat oven to 200°C (400°F). Line a baking sheet with parchment paper. 2. Place salmon fillets and asparagus spears on the baking sheet. 3. Drizzle with olive oil and season with salt and pepper. 4. Top salmon with lemon slices and sprinkle with fresh dill. 5. Bake for 12-15 minutes, or until salmon is cooked through and asparagus is tender-crisp. Serve immediately."
+    "method": [
+      "1. Preheat oven to 200°C (400°F). Line a baking sheet with parchment paper.",
+      "2. Place salmon fillets and asparagus spears on the baking sheet.",
+      "3. Drizzle with olive oil and season with salt and pepper.",
+      "4. Top salmon with lemon slices and sprinkle with fresh dill.",
+      "5. Bake for 12-15 minutes, or until salmon is cooked through and asparagus is tender-crisp. Serve immediately."
+    ]
   },
   {
     "id": 9,
@@ -253,7 +294,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. In a medium bowl, combine black beans, corn, red onion, red bell pepper, jalapeño (if using), and cilantro. 2. In a small bowl, whisk together lime juice, olive oil, salt, and pepper. 3. Pour the dressing over the bean and vegetable mixture. Toss to combine. 4. Chill for at least 15 minutes before serving. Serve with tortilla chips or as a topping for grilled chicken or fish."
+    "method": [
+      "1. In a medium bowl, combine black beans, corn, red onion, red bell pepper, jalapeño (if using), and cilantro.",
+      "2. In a small bowl, whisk together lime juice, olive oil, salt, and pepper.",
+      "3. Pour the dressing over the bean and vegetable mixture. Toss to combine.",
+      "4. Chill for at least 15 minutes before serving. Serve with tortilla chips or as a topping for grilled chicken or fish."
+    ]
   },
   {
     "id": 10,
@@ -285,7 +331,12 @@
         "unit": "optional"
       }
     ],
-    "method": "1. In a jar or container, combine rolled oats, milk, chia seeds (if using), maple syrup or honey (if using), and vanilla extract (if using). 2. Stir well to combine. 3. Cover and refrigerate overnight or for at least 4 hours. 4. In the morning, add your favorite toppings and enjoy."
+    "method": [
+      "1. In a jar or container, combine rolled oats, milk, chia seeds (if using), maple syrup or honey (if using), and vanilla extract (if using).",
+      "2. Stir well to combine.",
+      "3. Cover and refrigerate overnight or for at least 4 hours.",
+      "4. In the morning, add your favorite toppings and enjoy."
+    ]
   },
   {
     "id": 11,
@@ -320,7 +371,14 @@
         "unit": "optional"
       }
     ],
-    "method": "1. Heat olive oil in a pot over medium heat. Add chopped onion and cook until softened, about 5 minutes. Add minced garlic and cook for another minute until fragrant. 2. Stir in diced tomatoes (undrained), vegetable broth, and dried oregano. Bring to a simmer. 3. Reduce heat and cook for 15-20 minutes, allowing the flavors to meld. 4. Use an immersion blender or carefully transfer the soup to a regular blender and blend until smooth. 5. Season with salt and pepper to taste. 6. Ladle into bowls and garnish with fresh basil leaves, if desired. Serve hot."
+    "method": [
+      "1. Heat olive oil in a pot over medium heat. Add chopped onion and cook until softened, about 5 minutes. Add minced garlic and cook for another minute until fragrant.",
+      "2. Stir in diced tomatoes (undrained), vegetable broth, and dried oregano. Bring to a simmer.",
+      "3. Reduce heat and cook for 15-20 minutes, allowing the flavors to meld.",
+      "4. Use an immersion blender or carefully transfer the soup to a regular blender and blend until smooth.",
+      "5. Season with salt and pepper to taste.",
+      "6. Ladle into bowls and garnish with fresh basil leaves, if desired. Serve hot."
+    ]
   },
   {
     "id": 12,
@@ -341,7 +399,12 @@
       { "item": "Salsa", "quantity": "for serving", "unit": "optional" },
       { "item": "Sour cream", "quantity": "for serving", "unit": "optional" }
     ],
-    "method": "1. Heat a dry skillet or griddle over medium heat. 2. Place one tortilla in the skillet. Sprinkle half of the cheese over half of the tortilla. If using, add cooked chicken or black beans over the cheese. Sprinkle the remaining cheese on top. 3. Place the second tortilla on top. 4. Cook for 2-3 minutes per side, or until the tortilla is golden brown and the cheese is melted and gooey. 5. Carefully remove from the skillet and cut into wedges. 6. Serve immediately with salsa and sour cream, if desired. Repeat with the remaining tortillas and fillings."
+    "method": [
+      "1. Heat a dry skillet or griddle over medium heat.",
+      "2. Place one tortilla in the skillet. Sprinkle half of the cheese over half of the tortilla. If using, add cooked chicken or black beans over the cheese. Sprinkle the remaining cheese on top.",
+      "3. Place the second tortilla on top.",
+      "4. Cook for 2-3 minutes per side, or until the tortilla is golden brown and the cheese is melted and gooey. 5. Carefully remove from the skillet and cut into wedges. 6. Serve immediately with salsa and sour cream, if desired. Repeat with the remaining tortillas and fillings."
+    ]
   },
   {
     "id": 13,
@@ -372,7 +435,12 @@
       { "item": "Bread slices", "quantity": "2", "unit": "" },
       { "item": "Lettuce leaves", "quantity": "optional" }
     ],
-    "method": "1. In a medium bowl, combine drained tuna, mayonnaise, chopped celery, and chopped red onion. 2. Stir in lemon juice, salt, and pepper. Mix well. 3. Spread the tuna salad evenly on one slice of bread. 4. Top with lettuce leaves, if desired, and the other slice of bread. Serve immediately."
+    "method": [
+      "1. In a medium bowl, combine drained tuna, mayonnaise, chopped celery, and chopped red onion.",
+      "2. Stir in lemon juice, salt, and pepper. Mix well.",
+      "3. Spread the tuna salad evenly on one slice of bread.",
+      "4. Top with lettuce leaves, if desired, and the other slice of bread. Serve immediately."
+    ]
   },
   {
     "id": 14,
@@ -390,7 +458,12 @@
       { "item": "Salt", "quantity": "to taste" },
       { "item": "Black pepper", "quantity": "to taste" }
     ],
-    "method": "1. Preheat oven to 200°C (400°F). Line a baking sheet with parchment paper. 2. In a large bowl, toss sweet potato fries with olive oil, paprika, garlic powder, salt, and pepper until evenly coated. 3. Spread the fries in a single layer on the prepared baking sheet. 4. Bake for 20-25 minutes, flipping halfway through, until tender and lightly browned. Serve hot."
+    "method": [
+      "1. Preheat oven to 200°C (400°F). Line a baking sheet with parchment paper.",
+      "2. In a large bowl, toss sweet potato fries with olive oil, paprika, garlic powder, salt, and pepper until evenly coated.",
+      "3. Spread the fries in a single layer on the prepared baking sheet.",
+      "4. Bake for 20-25 minutes, flipping halfway through, until tender and lightly browned. Serve hot."
+    ]
   },
   {
     "id": 15,
@@ -428,6 +501,11 @@
         "optional": true
       }
     ],
-    "method": "1. In a large bowl, gently combine all the prepared fruits. 2. If desired, drizzle with honey or lime juice for added sweetness or tang. 3. Toss lightly to combine. 4. Serve immediately or chill for later."
+    "method": [
+      "1. In a large bowl, gently combine all the prepared fruits.",
+      "2. If desired, drizzle with honey or lime juice for added sweetness or tang.",
+      "3. Toss lightly to combine.",
+      "4. Serve immediately or chill for later."
+    ]
   }
 ]

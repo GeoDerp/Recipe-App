@@ -1,5 +1,7 @@
 @use "@angular/material" as mat;
 
+
+
 html {
   @include mat.theme(
     (
@@ -24,4 +26,17 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+//set global styles
+body, img, html, table {
+  border-width: 2px;
+  border-radius: 7px !important;
+
+}
+
+.card {
+  max-width: 400px;
+  box-shadow: 10px 10px var(--mat-sys-secondary) !important;
+  margin-top: 30px;
 }

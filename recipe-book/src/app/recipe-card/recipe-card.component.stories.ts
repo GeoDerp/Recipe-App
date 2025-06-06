@@ -48,8 +48,8 @@ export const Default: Story = {
         { item: 'Salt', quantity: 'to taste' },
         { item: 'Black pepper', quantity: 'to taste' },
       ],
-      method: '1. Preheat oven to 180°C (350°F). Brush baguette slices with olive oil and bake for 8-10 minutes until lightly golden. 2. In a bowl, combine diced tomatoes, basil, minced garlic, olive oil, salt, and pepper. 3. Spoon the tomato mixture onto the toasted baguette slices. 4. Drizzle with balsamic glaze if desired. Serve immediately.',
-      favourite: false
+      method: ['1. Preheat oven to 180°C (350°F). Brush baguette slices with olive oil and bake for 8-10 minutes until lightly golden.","2. In a bowl, combine diced tomatoes, basil, minced garlic, olive oil, salt, and pepper.","3. Spoon the tomato mixture onto the toasted baguette slices.","4. Drizzle with balsamic glaze if desired. Serve immediately.'],
+      favorite: false
     },
   }
 };

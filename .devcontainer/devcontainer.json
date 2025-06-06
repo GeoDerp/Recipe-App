@@ -12,7 +12,6 @@
 	// uncomment if the app/source directory is in a sub folder
 	"workspaceMount": "source=${localWorkspaceFolder}/recipe-book,target=/workspace,type=bind",
 	"workspaceFolder": "/workspace",
-
 	// may be needed for Podman
 	"runArgs": [
 		"--userns=keep-id",
@@ -21,38 +20,37 @@
 	"customizations": {
 		// Configure properties specific to VS Code.
 		"vscode": {
-		  // Add the IDs of extensions you want installed when the container is created.
-		  "extensions": [
-			"dbaeumer.vscode-eslint",
-			"ms-vscode.vscode-typescript-next",
-			"SonarSource.sonarlint-vscode",
-			"AquaSecurityOfficial.trivy-vulnerability-scanner",
-			"firefox-devtools.vscode-firefox-debug",
-			"Angular.ng-template",
-			"dbaeumer.vscode-eslint",
-			"ms-vscode.vscode-typescript-next",
-			"ms-vscode.vscode-typescript",
-			"Angular.ng-template",
-			"ms-azuretools.vscode-containers",
-			"Semgrep.semgrep",
-			"GitHub.vscode-github-actions",
-			"eamodio.gitlens",
-			"redhat.vscode-yaml",
-			"redhat.vscode-xml",
-			"ecmel.vscode-html-css",
-			"bierner.markdown-mermaid",
-			"esbenp.prettier-vscode",
-			"mechatroner.rainbow-csv",
-			"editorconfig.editorconfig"
-		],
-		  "settings": {
-			"[typescript]": {
-			  "editor.defaultFormatter": "ms-vscode.vscode-typescript-next",
-			},
-			 "editor.tabSize": 4
-		  }
+			// Add the IDs of extensions you want installed when the container is created.
+			"extensions": [
+				"dbaeumer.vscode-eslint",
+				"ms-vscode.vscode-typescript-next",
+				"SonarSource.sonarlint-vscode",
+				"AquaSecurityOfficial.trivy-vulnerability-scanner",
+				"firefox-devtools.vscode-firefox-debug",
+				"Angular.ng-template",
+				"dbaeumer.vscode-eslint",
+				"ms-vscode.vscode-typescript-next",
+				"ms-vscode.vscode-typescript",
+				"Angular.ng-template",
+				"ms-azuretools.vscode-containers",
+				"Semgrep.semgrep",
+				"GitHub.vscode-github-actions",
+				"eamodio.gitlens",
+				"redhat.vscode-yaml",
+				"redhat.vscode-xml",
+				"ecmel.vscode-html-css",
+				"bierner.markdown-mermaid",
+				"esbenp.prettier-vscode",
+				"mechatroner.rainbow-csv",
+				"editorconfig.editorconfig",
+				"streetsidesoftware.code-spell-checker"
+			],
+			"settings": {
+				"[typescript]": {
+					"editor.defaultFormatter": "ms-vscode.vscode-typescript-next",
+				},
+				"editor.tabSize": 4
+			}
 		}
-	  }
 	}
-
-
+}

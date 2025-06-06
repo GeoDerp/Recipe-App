@@ -1,7 +1,139 @@
-<h1>Title</h1>
-<form>
-    <input type="text">
-    <input type="text">
-    <textarea name="Process" id="process"></textarea>
-    <button id="save"></button>
-</form>
+<mat-card
+  class="card"
+  appearance="outlined"
+  style="margin: 0px; min-width: 100%; min-height: 100%"
+>
+  <h2 mat-dialog-title>{{ data ? "Edit Recipe" : "Create Recipe" }}</h2>
+  <mat-dialog-content class="mat-typography">
+    <form [formGroup]="this.RecipeForm" style="display: grid">
+      <mat-form-field>
+        <mat-label>Title</mat-label>
+        <input type="text" formControlName="title" matInput />
+      </mat-form-field>
+
+      <mat-label>Image</mat-label>
+      <input
+        type="file"
+        formControlName="image"
+        accept="image/png, image/jpeg"
+      />
+
+      <hr />
+
+      <h2>Ingredients</h2>
+      <ng-container formGroupName="ingredients">
+        <mat-chip-grid class="mat-mdc-chip-set-stacked" #ingredients>
+          @for (ingredient of this.ingredients(); track ingredient) {
+          <mat-chip-row (removed)="removeIngredients(ingredient)">
+            {{ ingredient.item }}:{{ ingredient.quantity }}{{ ingredient.unit }}
+            <button matChipRemove>
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip-row>
+          }
+        </mat-chip-grid>
+
+        <mat-form-field>
+          <mat-label>Item</mat-label>
+          <input
+            [matChipInputFor]="ingredients"
+            type="text"
+            formControlName="item"
+            matInput
+          />
+        </mat-form-field>
+
+        <div style="display: flex">
+          <mat-form-field>
+            <mat-label>Quantity</mat-label>
+            <input
+              type="text"
+              [matChipInputFor]="ingredients"
+              formControlName="quantity"
+              matInput
+            />
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Unit</mat-label>
+            <select matNativeControl formControlName="unit">
+              <option value="mL">Milliliters (mL)</option>
+              <option value="L">Liters (L)</option>
+              <option value="g">Grams (g)</option>
+              <option value="kg">Kilograms (kg)</option>
+              <option value="C">Degrees Celsius (°C)</option>
+            </select>
+          </mat-form-field>
+        </div>
+
+        <mat-form-field>
+          <mat-label>Preparation</mat-label>
+          <input
+            [matChipInputFor]="ingredients"
+            type="text"
+            formControlName="preparation"
+            matInput
+          />
+        </mat-form-field>
+
+        <br />
+
+        <span style="display: flex">
+          <mat-checkbox
+            style="margin-right: auto; height: 20px"
+            formControlName="optional"
+          >
+            Optional</mat-checkbox
+          >
+          <button
+            (click)="this.addIngredients()"
+            style="margin-left: auto"
+            mat-mini-fab
+          >
+            <mat-icon>add</mat-icon>
+          </button>
+        </span>
+
+        <br />
+      </ng-container>
+      <hr />
+
+      <h2>Steps:</h2>
+
+      <mat-form-field>
+        <mat-chip-grid
+          class="mat-mdc-chip-set-stacked"
+          #methods
+          formControlName="method"
+        >
+          @for (method of this.methods(); track method) {
+          <mat-chip-row (removed)="remove(method)">
+            {{ method }}
+            <button matChipRemove>
+              <mat-icon>cancel</mat-icon>
+            </button>
+          </mat-chip-row>
+          }
+        </mat-chip-grid>
+        <mat-label>steps</mat-label>
+        <input
+          formControlName="method"
+          matInput
+          [matChipInputFor]="methods"
+          (matChipInputTokenEnd)="add($event)"
+        />
+      </mat-form-field>
+    </form>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button
+      mat-button
+      [mat-dialog-close]="close()"
+      cdkFocusInitial
+      [disabled]="!this.RecipeForm.valid && data && !data.recipe"
+    >
+      {{ data ? "Edit" : "Create" }}
+    </button>
+  </mat-dialog-actions>
+</mat-card>
