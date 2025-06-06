@@ -1,11 +1,11 @@
-import { HttpClient } from '@angular/common/http';
-import { inject, Injectable } from '@angular/core';
+import { HttpClient } from "@angular/common/http";
+import { inject, Injectable } from "@angular/core";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class RecipeImagesService {
-  url = 'assets/img';
+  url = "assets/img";
   http = inject(HttpClient);
 
   getImg(imgid: string): string {

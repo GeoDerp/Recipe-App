@@ -1,20 +1,20 @@
-import { Component, computed, inject } from '@angular/core';
-import { RecipeService } from '../../services/recipe-service.service';
-import { RecipeCardComponent } from '../../recipe-card/recipe-card.component';
-import { MatCardModule } from '@angular/material/card';
-import { RecipeImagesService } from '../../services/recipe-images-service.service';
-import { Recipe } from '../../interfaces/recipe-interface';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDialog } from '@angular/material/dialog';
-import { CreateRecipeComponent } from '../recipe/create-recipe/create-recipe.component';
+import { Component, computed, inject } from "@angular/core";
+import { RecipeService } from "../../services/recipe-service.service";
+import { RecipeCardComponent } from "../../recipe-card/recipe-card.component";
+import { MatCardModule } from "@angular/material/card";
+import { RecipeImagesService } from "../../services/recipe-images-service.service";
+import { Recipe } from "../../interfaces/recipe-interface";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { MatDialog } from "@angular/material/dialog";
+import { CreateRecipeComponent } from "../recipe/create-recipe/create-recipe.component";
 
 @Component({
-  selector: 'app-home',
+  selector: "app-home",
   standalone: true,
   imports: [RecipeCardComponent, MatCardModule, MatButtonModule, MatIconModule],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.scss',
+  templateUrl: "./home.component.html",
+  styleUrl: "./home.component.scss",
 })
 export class HomeComponent {
   // services
@@ -25,8 +25,8 @@ export class HomeComponent {
   // grab recipes
   recipes = computed<Recipe[]>(() => {
     for (let recipe in this.recipesService.recipeList()) {
-      this.recipesService.recipeList()[recipe].imagestr =
-        this.recipeImages.getImg(String(Number(recipe) + 1));
+      this.recipesService.recipeList()[recipe].imagestr = this.recipeImages
+        .getImg(String(Number(recipe) + 1));
     }
     let sorted = this.recipesService.recipeList().sort((a, b) => {
       if (a.favorite) {
@@ -40,8 +40,8 @@ export class HomeComponent {
 
   editDialog() {
     const dialogRef = this.dialog.open(CreateRecipeComponent, {
-      height: '700px',
-      width: '700px',
+      height: "700px",
+      width: "700px",
     });
 
     dialogRef.afterClosed().subscribe((result) => {

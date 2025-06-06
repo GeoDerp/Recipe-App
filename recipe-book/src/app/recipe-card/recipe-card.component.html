@@ -4,12 +4,12 @@
       <mat-card-title>{{ recipe().title }}</mat-card-title>
     </mat-card-header>
     @if (recipe().imagestr) {
-    <img
-      style="margin-left: auto; order: 2"
-      mat-card-md-image
-      src="{{ recipe().imagestr }}"
-      alt="{{ recipe().title }}"
-    />
+      <img
+        style="margin-left: auto; order: 2"
+        mat-card-md-image
+        src="{{ recipe().imagestr }}"
+        alt="{{ recipe().title }}"
+      />
     }
   </div>
   <mat-card-content> </mat-card-content>

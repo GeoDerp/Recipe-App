@@ -13,9 +13,13 @@ RUN dnf -y update-minimal --security --sec-severity=Important --sec-severity=Cri
     # enable nodejs verson
     dnf module -y enable nodejs:$(cat .nvmrc | cut -c2-3) && \
     # Install git, nano, nodejs and npm 
-    dnf install git nano nodejs npm -y; \
+    dnf install unzip git nano nodejs npm -y; \
     # clear cache
     dnf clean all
+
+# install Deno
+RUN curl -fsSL https://deno.land/install.sh | DENO_INSTALL=/usr/local sh
+
 
 # Dev target
 FROM base AS dev
@@ -23,8 +27,6 @@ COPY .devcontainer/devtools.sh /tmp/devtools.sh
 RUN  /tmp/devtools.sh
 USER default
 
-# install dino
-#RUN curl -fsSL https://deno.land/install.sh | sh
 
 # DEPLOYMENT EXAMPLE:
 #-----------------------------
@@ -38,8 +40,8 @@ WORKDIR /app
 COPY . . 
 
 ## Install project requirements, build project
-RUN npm install lite-server --save-dev; \
-    npm build --prod
+RUN deno install lite-server --save-dev; \
+    deno build --prod
 
 ## clarify permissions
 RUN chown -R default:0 /app && \

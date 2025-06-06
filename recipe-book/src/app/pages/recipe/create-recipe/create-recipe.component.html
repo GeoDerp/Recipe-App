@@ -24,12 +24,14 @@
       <ng-container formGroupName="ingredients">
         <mat-chip-grid class="mat-mdc-chip-set-stacked" #ingredients>
           @for (ingredient of this.ingredients(); track ingredient) {
-          <mat-chip-row (removed)="removeIngredients(ingredient)">
-            {{ ingredient.item }}:{{ ingredient.quantity }}{{ ingredient.unit }}
-            <button matChipRemove>
-              <mat-icon>cancel</mat-icon>
-            </button>
-          </mat-chip-row>
+            <mat-chip-row (removed)="removeIngredients(ingredient)">
+              {{ ingredient.item }}:{{ ingredient.quantity }}{{
+                ingredient.unit
+              }}
+              <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip-row>
           }
         </mat-chip-grid>
 
@@ -83,8 +85,7 @@
             style="margin-right: auto; height: 20px"
             formControlName="optional"
           >
-            Optional</mat-checkbox
-          >
+            Optional</mat-checkbox>
           <button
             (click)="this.addIngredients()"
             style="margin-left: auto"
@@ -107,12 +108,12 @@
           formControlName="method"
         >
           @for (method of this.methods(); track method) {
-          <mat-chip-row (removed)="remove(method)">
-            {{ method }}
-            <button matChipRemove>
-              <mat-icon>cancel</mat-icon>
-            </button>
-          </mat-chip-row>
+            <mat-chip-row (removed)="remove(method)">
+              {{ method }}
+              <button matChipRemove>
+                <mat-icon>cancel</mat-icon>
+              </button>
+            </mat-chip-row>
           }
         </mat-chip-grid>
         <mat-label>steps</mat-label>

@@ -1,13 +1,13 @@
-import { inject, Injectable, signal } from '@angular/core';
-import { Recipe } from '../interfaces/recipe-interface';
-import { HttpClient } from '@angular/common/http';
-import { toSignal } from '@angular/core/rxjs-interop';
+import { inject, Injectable, signal } from "@angular/core";
+import { Recipe } from "../interfaces/recipe-interface";
+import { HttpClient } from "@angular/common/http";
+import { toSignal } from "@angular/core/rxjs-interop";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class RecipeService {
-  url = 'assets/recipes.json';
+  url = "assets/recipes.json";
   http = inject(HttpClient);
 
   recipeList = signal<Recipe[]>([]);

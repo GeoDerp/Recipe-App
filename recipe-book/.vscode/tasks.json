@@ -3,58 +3,52 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "type": "npm",
-      "script": "start",
-      "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
+      "type": "deno",
+      "command": "task",
+      "args": [
+        "start"
+      ],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno: start",
+      "detail": "$ ng serve --host 0.0.0.0"
     },
     {
-      "type": "npm",
-      "script": "test",
-      "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
+      "type": "deno",
+      "command": "task",
+      "args": [
+        "build"
+      ],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno: build",
+      "detail": "$ ng build"
     },
     {
-      "type": "npm",
-      "script": "storybook",
-      "isBackground": true,
-      "problemMatcher": {
-        "owner": "typescript",
-        "pattern": "$tsc",
-        "background": {
-          "activeOnStart": true,
-          "beginsPattern": {
-            "regexp": "(.*?)"
-          },
-          "endsPattern": {
-            "regexp": "bundle generation complete"
-          }
-        }
-      }
+      "type": "deno",
+      "command": "task",
+      "args": [
+        "build-storybook"
+      ],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno: build-storybook",
+      "detail": "$ ng run recipe-book:build-storybook"
+    },
+    {
+      "type": "deno",
+      "command": "task",
+      "args": [
+        "test"
+      ],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno: test",
+      "detail": "$ ng test"
     }
   ]
 }

@@ -1,16 +1,14 @@
 @use "@angular/material" as mat;
 
-
-
 html {
   @include mat.theme(
     (
       color: (
         primary: mat.$rose-palette,
-       theme-type: dark
-       ),
-      typography: Roboto
-    )
+        theme-type: dark,
+      ),
+      typography: Roboto,
+    ),
   );
   // background: var(--mat-sys-primary-container);
   // color: var(--mat-sys-on-primary-container);
@@ -32,7 +30,6 @@ body {
 body, img, html, table {
   border-width: 2px;
   border-radius: 7px !important;
-
 }
 
 .card {

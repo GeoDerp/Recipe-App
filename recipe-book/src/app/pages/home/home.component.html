@@ -1,9 +1,9 @@
 <main>
   @for (recipe of this.recipes(); track recipe.id) {
-  <app-recipe-card
-    (favorite)="favorite(recipe.id)"
-    [recipe]="recipe"
-  ></app-recipe-card>
+    <app-recipe-card
+      (favorite)="favorite(recipe.id)"
+      [recipe]="recipe"
+    ></app-recipe-card>
   }
   <div class="bottomBar">
     <button (click)="editDialog()" class="edit" mat-fab>

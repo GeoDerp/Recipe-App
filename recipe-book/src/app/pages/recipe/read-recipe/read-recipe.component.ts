@@ -1,20 +1,20 @@
-import { Component, computed, inject, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { RecipeService } from '../../../services/recipe-service.service';
-import { MatTableModule } from '@angular/material/table';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatDialog } from '@angular/material/dialog';
-import { CreateRecipeComponent } from '../create-recipe/create-recipe.component';
-import { RecipeImagesService } from '../../../services/recipe-images-service.service';
+import { Component, computed, inject, OnInit } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { RecipeService } from "../../../services/recipe-service.service";
+import { MatTableModule } from "@angular/material/table";
+import { MatCardModule } from "@angular/material/card";
+import { MatIconModule } from "@angular/material/icon";
+import { MatButtonModule } from "@angular/material/button";
+import { MatDialog } from "@angular/material/dialog";
+import { CreateRecipeComponent } from "../create-recipe/create-recipe.component";
+import { RecipeImagesService } from "../../../services/recipe-images-service.service";
 
 @Component({
-  selector: 'app-read-recipe',
+  selector: "app-read-recipe",
   standalone: true,
   imports: [MatTableModule, MatCardModule, MatIconModule, MatButtonModule],
-  templateUrl: './read-recipe.component.html',
-  styleUrl: './read-recipe.component.scss',
+  templateUrl: "./read-recipe.component.html",
+  styleUrl: "./read-recipe.component.scss",
 })
 export class ReadRecipeComponent implements OnInit {
   readonly dialog = inject(MatDialog);
@@ -22,18 +22,17 @@ export class ReadRecipeComponent implements OnInit {
   recipeID: number = -1;
 
   displayedColumns: string[] = [
-    'item',
-    'quantity',
-    'unit',
-    'preparation',
-    'optional',
+    "item",
+    "quantity",
+    "unit",
+    "preparation",
+    "optional",
   ];
 
   constructor(
     private readonly route: ActivatedRoute,
     private readonly recipesService: RecipeService,
-    private readonly recipeImages: RecipeImagesService
-
+    private readonly recipeImages: RecipeImagesService,
   ) {}
 
   recipe = computed(() => {
@@ -51,15 +50,15 @@ export class ReadRecipeComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((event) => {
-      this.recipeID = event['id'];
+      this.recipeID = event["id"];
     });
   }
 
   editDialog() {
     const dialogRef = this.dialog.open(CreateRecipeComponent, {
       data: { recipe: this.recipe },
-      height: '700px',
-      width: '700px',
+      height: "700px",
+      width: "700px",
     });
 
     dialogRef.afterClosed().subscribe((result) => {
