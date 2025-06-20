@@ -38,7 +38,7 @@ export class RecipeCardComponent {
     this.favorite.emit();
   }
 
-  recipePage() {
+  goToRecipePage() {
     this.router.navigate([`/recipe/${this.recipe().id}`]);
   }
 }

@@ -19,18 +19,21 @@ import { CreateRecipeComponent } from "../recipe/create-recipe/create-recipe.com
 export class HomeComponent {
   // services
   readonly recipesService: RecipeService = inject(RecipeService);
-  readonly recipeImages: RecipeImagesService = inject(RecipeImagesService);
+  readonly RecipeImagesService: RecipeImagesService = inject(
+    RecipeImagesService,
+  );
   readonly dialog = inject(MatDialog);
 
   // grab recipes
   recipes = computed<Recipe[]>(() => {
-    for (let recipe in this.recipesService.recipeList()) {
-      this.recipesService.recipeList()[recipe].imagestr = this.recipeImages
-        .getImg(String(Number(recipe) + 1));
+    for (const index in this.recipesService.recipeList()) {
+      this.recipesService.recipeList()[index].imagestr = this
+        .RecipeImagesService
+        .getImg(String(Number(index) + 1));
     }
-    let sorted = this.recipesService.recipeList().sort((a, b) => {
+    const sorted = this.recipesService.recipeList().sort((a, b) => {
       if (a.favorite) {
-        return Number(b.favorite) - Number(a.favorite);
+        return 0;
       } else {
         return 1;
       }
